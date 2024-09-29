@@ -36,10 +36,10 @@
 
             label = "Base";
             bindings = <
-&kp TAB     &kp Q  &kp W  &kp F     &kp P     &kp G    &kp J      &kp L      &kp U          &kp Y    &kp SEMI  &kp BSLH
-&mo 2       &kp A  &kp R  &kp S     &kp T     &kp D    &kp H      &kp N      &kp E          &kp I    &kp O     &kp SQT
-&kp LSHIFT  &kp Z  &kp X  &kp C     &kp V     &kp B    &kp K      &kp M      &kp COMMA      &kp DOT  &kp FSLH  &mt RSHFT RET
-                          &kp LALT  &kp LGUI  &mo 1    &kp SPACE  &kp LCTRL  &kp RIGHT_ALT
+&kp TAB     &kp Q  &kp W  &kp F     &kp P     &kp G    &kp J      &kp L      &kp U      &kp Y    &kp SEMI  &kp BSLH
+&mo 2       &kp A  &kp R  &kp S     &kp T     &kp D    &kp H      &kp N      &kp E      &kp I    &kp O     &kp SQT
+&kp LSHIFT  &kp Z  &kp X  &kp C     &kp V     &kp B    &kp K      &kp M      &kp COMMA  &kp DOT  &kp FSLH  &mt RSHFT RET
+                          &kp LALT  &kp LGUI  &mo 1    &kp SPACE  &kp LCTRL  &mo 2
             >;
         };
 
@@ -55,7 +55,7 @@
 &kp TILDE  &kp PRCNT  &kp AMPS  &kp QMARK   &kp PLUS    &kp AT      &kp DLLR       &kp UNDER        &kp LBKT      &kp RBKT  &kp EXCL   &kp HASH
 &kp GRAVE  &kp FSLH   &kp LPAR  &kp EQUAL   &kp N0      &kp LBRC    &kp RBRC       &kp N1           &kp STAR      &kp RPAR  &kp MINUS  &kp CARET
 &trans     &kp N6     &kp N7    &kp N8      &kp N9      &kp PIPE    &kp BACKSLASH  &kp N2           &kp N3        &kp N4    &kp N5     &trans
-                                &kp C_MUTE  &kp C_MUTE  &trans      &kp RET        &kp C_VOLUME_UP  &kp C_VOL_DN
+                                &kp C_PREV  &kp C_NEXT  &trans      &kp C_MUTE     &kp C_VOLUME_UP  &kp C_VOL_DN
             >;
         };
 
@@ -68,10 +68,10 @@
 
             label = "Raise";
             bindings = <
-&trans  &kp INS    &kp PSCRN  &kp LC(PG_UP)  &kp LC(PG_DN)  &trans     &kp PG_UP  &kp LC(LEFT_ARROW)  &kp UP    &kp LC(RIGHT_ARROW)  &trans    &trans
-&trans  &kp LALT   &kp GUI    &kp LSHFT      &kp LCTRL      &kp ESC    &kp PG_DN  &kp LEFT            &kp DOWN  &kp RIGHT            &kp BSPC  &kp DEL
-&trans  &kp LC(Z)  &kp LC(X)  &kp LC(C)      &kp LC(V)      &trans     &trans     &trans              &trans    &trans               &trans    &trans
-                              &trans         &trans         &trans     &kp RET    &trans              &trans
+&trans  &kp INS    &kp PSCRN  &kp LC(PG_UP)  &kp LC(PG_DN)  &trans        &kp PG_UP  &kp LC(LEFT_ARROW)  &kp UP    &kp LC(RIGHT_ARROW)  &trans    &trans
+&trans  &kp LALT   &kp GUI    &kp LSHFT      &kp LCTRL      &kp ESC       &kp PG_DN  &kp LEFT            &kp DOWN  &kp RIGHT            &kp BSPC  &kp DEL
+&trans  &kp LC(Z)  &kp LC(X)  &kp LC(C)      &kp LC(V)      &trans        &trans     &trans              &trans    &trans               &trans    &trans
+                              &kp BACKSPACE  &kp DELETE     &kp RETURN    &kp RET    &trans              &trans
             >;
         };
 
