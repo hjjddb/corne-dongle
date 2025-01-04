@@ -4,19 +4,23 @@
  * SPDX-License-Identifier: MIT
  */
 
-
+#include <corne.dtsi>
 #include <dt-bindings/zmk/matrix_transform.h>
-#include <layouts/foostan/corne/5column.dtsi>
+include <layouts/foostan/corne/5column.dtsi>
 #include <layouts/foostan/corne/6column.dtsi>
 
-
-&physical_layout0 {
+&foostan_corne_6col_layout {
     transform = <&default_transform>;
 };
+
+&foostan_corne_5col_layout {
+    transform = <&five_column_transform>;
+};
+
 / {
     chosen {
         zmk,kscan = &mock_kscan;
-        zmk,physical_layout = &physical_layout0;
+        zmk,physical-layout = &foostan_corne_6col_layout;
     };
 
     mock_kscan: kscan_0 {
