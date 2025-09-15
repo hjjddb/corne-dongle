@@ -10,7 +10,17 @@ endif
 
 if SHIELD_CORNE_CENTRAL_DONGLE || SHIELD_CORNE_PERIPHERAL_LEFT || SHIELD_CORNE_PERIPHERAL_RIGHT
 
-config ZMK_SPLIT
+if ZMK_DISPLAY
+
+config I2C
     default y
 
+config SSD1306
+    default y
+
+endif # ZMK_DISPLAY
+
+config ZMK_SPLIT
+    default y
 endif
+
