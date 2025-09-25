@@ -12,7 +12,8 @@
 #define BASE 0
 #define LOWER 1
 #define RAISE 2
-#define ADJUST 3
+#define MEDIA 3
+#define ADJUST 4
 
 / {
     behaviors {
@@ -107,6 +108,16 @@
 &trans  &kp N0  &kp N1  &kp N2  &kp N3  &kp N4                            &kp EXCL      &kp AT     &kp HASH   &kp DOLLAR  &kp PRCNT  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                            &kp MINUS     &kp EQUAL  &kp GRAVE  &kp BSLH    &kp BSLH   &trans
                         &trans  &trans  &kp UNDER  &kp TILDE    &kp PIPE  &kp PLUS      &trans     &trans     &trans            
+            >;
+        };
+
+        media {
+            label = "media";
+            bindings = <
+&kp F12     &kp F6          &kp F7        &kp F8        &kp F9        &kp F11                       &trans  &trans        &trans        &trans      &trans  &trans
+&kp F11     &kp F1          &kp F2        &kp F3        &kp F4        &kp F5                        &trans  &kp K_VOL_DN  &kp K_VOL_UP  &kp K_MUTE  &trans  &trans
+&bt BT_CLR  &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                  &trans  &kp K_PREV    &kp K_PP      &kp K_NEXT  &trans  &trans
+                                                        &trans        &trans        &trans  &trans  &trans  &trans
             >;
         };
 
