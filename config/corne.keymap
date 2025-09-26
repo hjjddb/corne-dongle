@@ -45,7 +45,7 @@
         compatible = "zmk,conditional-layers";
 
         adjust_layer {
-            if-layers = <LOWER RAISE>;
+            if-layers = <MEDIA RAISE>;
             then-layer = <ADJUST>;
         };
     };
@@ -107,7 +107,7 @@
 &trans  &kp N5  &kp N6  &kp N7  &kp N8  &kp N9                            &kp CARET     &kp AMPS   &kp ASTRK  &kp LPAR    &kp RPAR   &trans
 &trans  &kp N0  &kp N1  &kp N2  &kp N3  &kp N4                            &kp EXCL      &kp AT     &kp HASH   &kp DOLLAR  &kp PRCNT  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                            &kp MINUS     &kp EQUAL  &kp GRAVE  &kp BSLH    &kp BSLH   &trans
-                        &trans  &trans  &kp UNDER  &kp TILDE    &kp PIPE  &kp PLUS      &trans     &trans     &trans            
+                                &trans  &kp UNDER  &kp TILDE    &kp PIPE  &kp PLUS      &trans     &trans                       
             >;
         };
 
